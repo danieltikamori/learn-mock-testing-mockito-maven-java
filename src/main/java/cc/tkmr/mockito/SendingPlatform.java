@@ -4,7 +4,7 @@
 
 package cc.tkmr.mockito;
 
-public class DeliveryPlatform {
+public class SendingPlatform {
 
     public void sendEmail(Email email) {
         // complex operation and the magic happens, the email arrives at your platform

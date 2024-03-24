@@ -5,4 +5,10 @@
 package cc.tkmr.mockito;
 
 public class ApiPostOffice {
+
+    public LocationData searchBasedOnZipCode(String zipCode) {
+
+        return null;
+    }
+
 }
