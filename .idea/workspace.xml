@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a18195e4-95bd-48ea-b3a2-4959b11ebf28" name="Changes" comment="Add Capturing arguments test">
+    <list default="true" id="a18195e4-95bd-48ea-b3a2-4959b11ebf28" name="Changes" comment="Add &quot;Manipulating return values&quot; tests">
+      <change afterPath="$PROJECT_DIR$/src/test/java/cc/tkmr/mockito/NumberGeneratorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cc/tkmr/mockito/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cc/tkmr/mockito/AccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cc/tkmr/mockito/RegisterPersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cc/tkmr/mockito/RegisterPersonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/NumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/NumberGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +64,9 @@
     "JUnit.AccountTest.validateCallQuantity.executor": "Run",
     "JUnit.EmailSendingServiceTest.executor": "Run",
     "JUnit.ListTest.executor": "Run",
+    "JUnit.NumberGeneratorTest.executor": "Run",
+    "JUnit.NumberGeneratorTest.testGenerateRandomNumbersWithDefinedSize.executor": "Run",
+    "JUnit.NumberGeneratorTest.validateListOfNumbersGenerationWithoutInformingSize.executor": "Run",
     "JUnit.RegisterPersonTest.executor": "Run",
     "JUnit.RegisterPersonTest.throwExceptionWhenCallingApiPostOffice.executor": "Run",
     "JUnit.SendMessageTest.executor": "Run",
@@ -88,7 +92,7 @@
       <recent name="cc.tkmr.mockito" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AccountTest.returnTrueToAnyAmountAtBalanceValidation">
+  <component name="RunManager" selected="JUnit.NumberGeneratorTest.validateListOfNumbersGenerationWithoutInformingSize">
     <configuration name="AccountTest.returnTrueToAnyAmountAtBalanceValidation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learn-mock-testing-mockito-maven-java" />
       <extension name="coverage">
@@ -105,7 +109,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest.validateCallQuantity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NumberGeneratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learn-mock-testing-mockito-maven-java" />
       <extension name="coverage">
         <pattern>
@@ -114,14 +118,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cc.tkmr.mockito" />
-      <option name="MAIN_CLASS_NAME" value="cc.tkmr.mockito.AccountTest" />
-      <option name="METHOD_NAME" value="validateCallQuantity" />
+      <option name="MAIN_CLASS_NAME" value="cc.tkmr.mockito.NumberGeneratorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NumberGeneratorTest.testGenerateRandomNumbersWithDefinedSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learn-mock-testing-mockito-maven-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cc.tkmr.mockito.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cc.tkmr.mockito" />
+      <option name="MAIN_CLASS_NAME" value="cc.tkmr.mockito.NumberGeneratorTest" />
+      <option name="METHOD_NAME" value="testGenerateRandomNumbersWithDefinedSize" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmailSendingServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NumberGeneratorTest.validateListOfNumbersGenerationWithoutInformingSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learn-mock-testing-mockito-maven-java" />
       <extension name="coverage">
         <pattern>
@@ -130,23 +149,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cc.tkmr.mockito" />
-      <option name="MAIN_CLASS_NAME" value="cc.tkmr.mockito.EmailSendingServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegisterPersonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="learn-mock-testing-mockito-maven-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cc.tkmr.mockito.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cc.tkmr.mockito" />
-      <option name="MAIN_CLASS_NAME" value="cc.tkmr.mockito.RegisterPersonTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="cc.tkmr.mockito.NumberGeneratorTest" />
+      <option name="METHOD_NAME" value="validateListOfNumbersGenerationWithoutInformingSize" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -169,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NumberGeneratorTest.validateListOfNumbersGenerationWithoutInformingSize" />
+        <item itemvalue="JUnit.NumberGeneratorTest.testGenerateRandomNumbersWithDefinedSize" />
+        <item itemvalue="JUnit.NumberGeneratorTest" />
         <item itemvalue="JUnit.AccountTest.returnTrueToAnyAmountAtBalanceValidation" />
         <item itemvalue="JUnit.RegisterPersonTest.throwExceptionWhenCallingApiPostOffice" />
-        <item itemvalue="JUnit.RegisterPersonTest" />
-        <item itemvalue="JUnit.EmailSendingServiceTest" />
-        <item itemvalue="JUnit.AccountTest.validateCallQuantity" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +207,7 @@
       <workItem from="1711253851803" duration="29000" />
       <workItem from="1711253890956" duration="4410000" />
       <workItem from="1711259947750" duration="4780000" />
-      <workItem from="1711264737459" duration="4880000" />
+      <workItem from="1711264737459" duration="8171000" />
     </task>
     <task id="LOCAL-00001" summary="Fix: class name and minor corrections">
       <option name="closed" value="true" />
@@ -220,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711266967520</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add &quot;Manipulating return values&quot; tests">
+      <option name="closed" value="true" />
+      <created>1711271134904</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711271134904</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +265,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fix: class name and minor corrections" />
     <MESSAGE value="Add Capturing arguments test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Capturing arguments test" />
+    <MESSAGE value="Add &quot;Manipulating return values&quot; tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add &quot;Manipulating return values&quot; tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

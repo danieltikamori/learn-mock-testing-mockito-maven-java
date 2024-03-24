@@ -103,6 +103,8 @@ public class MyTest {
 
 Observe the object behavior when using Mockito spy.
 
+verify() is used to verify the behavior of an object.
+
 ## Capturing arguments
 
 Captor is used to capture arguments passed to a method.
@@ -112,8 +114,66 @@ Captor is used to capture arguments passed to a method.
 Argument matchers are used to match arguments passed to a method.
 
 Stubbing is used to mock return values of a method.
+(when, thenReturn, and thenThrow are used to mock return values of methods).
+
 
 ## Mocking static methods
+
+Not so used.
+
+Mockito Core is unable to mock classes with static methods.
+
+We use Mockito Inline to mock static methods. Add this to the pom.xml file or replace the Mockito Core:
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-inline</artifactId>
+        <version>5.2.0</version>
+        <scope>test</scope>
+    </dependency>
+</dependencies>
+```
+
+MockedStatic<> is used to mock static methods.
+
+## Further studies
+
+- BDDMockito
+- Spring Integration
+
+## References
+
+### Basics
+
+https://www.infoq.com/br/articles/mocks-Arent-Stubs/
+https://site.mockito.org/
+https://www.baeldung.com/mockito-annotations
+
+### Mockito tutorials and mock methods
+
+https://www.vogella.com/tutorials/Mockito/article.html
+https://www.baeldung.com/mockito-mock-methods
+
+### Spying with Mockito
+
+https://www.baeldung.com/mockito-spy
+https://stackoverflow.com/questions/28295625/mockito-spy-vs-mock
+
+### Argument Capturing with Mockito
+
+https://www.baeldung.com/mockito-argumentcaptor
+
+### Manipulating return values
+
+https://www.baeldung.com/mockito-argument-matchers
+https://www.baeldung.com/mockito-exceptions
+https://www.baeldung.com/mockito-behavior
+
+### Mocking static methods
+
+https://www.baeldung.com/mockito-mock-static-methods
 
 
 
