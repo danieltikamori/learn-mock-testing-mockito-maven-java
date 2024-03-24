@@ -11,6 +11,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.anyString;
 
 import java.time.LocalDate;
 
@@ -50,16 +51,50 @@ public class RegisterPersonTest {
         LocationData locationData = new LocationData("TX", "Houston", "Evergreen street", "Block A", "Happy district");
 
         // Mock the behavior of the ApiPostOffice object
-        Mockito.when(apiPostOffice.searchBasedOnZipCode("123456789")).thenReturn(locationData);
+//        Mockito.when(apiPostOffice.searchBasedOnZipCode("123456789")).thenReturn(locationData);
+        Mockito.when(apiPostOffice.searchBasedOnZipCode(anyString())).thenReturn(locationData);
+
 
         // Register a person with mock data
         Person person = registerPerson.registerPerson("Daniel", "1234567890", LocalDate.now(), "123456789");
 
         // Assertions to check the registration data
+        LocationData personAddress = person.getPersonAddress();
         assertEquals("Daniel", person.getName());
         assertEquals("1234567890", person.getDocument());
         assertEquals("TX", person.getPersonAddress().getState());
         assertEquals("Block A", person.getPersonAddress().getAddressComplement());
     }
 
+    @Test
+    void throwExceptionWhenCallingApiPostOffice() {
+
+        //To understand how the system behaves when an exception is thrown
+//        Mockito.when(apiPostOffice.searchBasedOnZipCode(anyString())).thenThrow(IllegalArgumentException.class);
+
+        // Mock the behavior of the ApiPostOffice object
+        Mockito.doThrow(IllegalArgumentException.class).when(apiPostOffice).searchBasedOnZipCode(anyString());
+
+
+        assertThrows(IllegalArgumentException.class, () -> registerPerson.registerPerson("Daniel", "1234567890", LocalDate.now(), "123456789"));
+
+    }
+
+    @Test
+    void registerPerson() {
+
+        // Create a sample location data
+        LocationData locationData = new LocationData("TX", "Houston", "Evergreen street", "Block A", "Happy district");
+
+        // Mock the behavior of the ApiPostOffice object
+//        Mockito.when(apiPostOffice.searchBasedOnZipCode("123456789")).thenReturn(locationData);
+        Mockito.when(apiPostOffice.searchBasedOnZipCode(anyString())).thenReturn(null);
+
+
+        // Register a person with mock data
+        Person person = registerPerson.registerPerson("Daniel", "1234567890", LocalDate.now(), "123456789");
+
+        // Assertions to check the registration data
+        assertNull(person.getPersonAddress());
+    }
 }

@@ -4,30 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a18195e4-95bd-48ea-b3a2-4959b11ebf28" name="Changes" comment="Fix: class name and minor corrections">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/EmailSendingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cc/tkmr/mockito/EmailSendingServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="a18195e4-95bd-48ea-b3a2-4959b11ebf28" name="Changes" comment="Add Capturing arguments test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/ApiPostOffice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/ApiPostOffice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/Email.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/EmailSendingPlatform.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/EnumFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/EnumFormat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/LocationData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/LocationData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/NumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/NumberGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/RegisterPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/RegisterPerson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/SendMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/SendMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/SendingPlatform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cc/tkmr/mockito/SendingPlatform.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cc/tkmr/mockito/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cc/tkmr/mockito/AccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cc/tkmr/mockito/ListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cc/tkmr/mockito/ListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cc/tkmr/mockito/RegisterPersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cc/tkmr/mockito/RegisterPersonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cc/tkmr/mockito/SendMessageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cc/tkmr/mockito/SendMessageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,10 +59,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.AccountTest.executor": "Run",
+    "JUnit.AccountTest.returnTrueToAnyAmountAtBalanceValidation.executor": "Run",
     "JUnit.AccountTest.validateCallQuantity.executor": "Run",
     "JUnit.EmailSendingServiceTest.executor": "Run",
     "JUnit.ListTest.executor": "Run",
     "JUnit.RegisterPersonTest.executor": "Run",
+    "JUnit.RegisterPersonTest.throwExceptionWhenCallingApiPostOffice.executor": "Run",
     "JUnit.SendMessageTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -105,8 +88,8 @@
       <recent name="cc.tkmr.mockito" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EmailSendingServiceTest">
-    <configuration name="AccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AccountTest.returnTrueToAnyAmountAtBalanceValidation">
+    <configuration name="AccountTest.returnTrueToAnyAmountAtBalanceValidation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learn-mock-testing-mockito-maven-java" />
       <extension name="coverage">
         <pattern>
@@ -116,7 +99,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="cc.tkmr.mockito" />
       <option name="MAIN_CLASS_NAME" value="cc.tkmr.mockito.AccountTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="returnTrueToAnyAmountAtBalanceValidation" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -167,7 +151,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SendMessageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegisterPersonTest.throwExceptionWhenCallingApiPostOffice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learn-mock-testing-mockito-maven-java" />
       <extension name="coverage">
         <pattern>
@@ -176,19 +160,20 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cc.tkmr.mockito" />
-      <option name="MAIN_CLASS_NAME" value="cc.tkmr.mockito.SendMessageTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="cc.tkmr.mockito.RegisterPersonTest" />
+      <option name="METHOD_NAME" value="throwExceptionWhenCallingApiPostOffice" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AccountTest.returnTrueToAnyAmountAtBalanceValidation" />
+        <item itemvalue="JUnit.RegisterPersonTest.throwExceptionWhenCallingApiPostOffice" />
+        <item itemvalue="JUnit.RegisterPersonTest" />
         <item itemvalue="JUnit.EmailSendingServiceTest" />
         <item itemvalue="JUnit.AccountTest.validateCallQuantity" />
-        <item itemvalue="JUnit.AccountTest" />
-        <item itemvalue="JUnit.SendMessageTest" />
-        <item itemvalue="JUnit.RegisterPersonTest" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +202,7 @@
       <workItem from="1711253851803" duration="29000" />
       <workItem from="1711253890956" duration="4410000" />
       <workItem from="1711259947750" duration="4780000" />
-      <workItem from="1711264737459" duration="2194000" />
+      <workItem from="1711264737459" duration="4880000" />
     </task>
     <task id="LOCAL-00001" summary="Fix: class name and minor corrections">
       <option name="closed" value="true" />
@@ -227,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711266930463</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add Capturing arguments test">
+      <option name="closed" value="true" />
+      <created>1711266967520</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711266967520</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,7 +251,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fix: class name and minor corrections" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix: class name and minor corrections" />
+    <MESSAGE value="Add Capturing arguments test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Capturing arguments test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

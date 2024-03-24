@@ -107,6 +107,14 @@ Observe the object behavior when using Mockito spy.
 
 Captor is used to capture arguments passed to a method.
 
+## Manipulating return values
+
+Argument matchers are used to match arguments passed to a method.
+
+Stubbing is used to mock return values of a method.
+
+## Mocking static methods
+
 
 
 ## Troubleshooting
